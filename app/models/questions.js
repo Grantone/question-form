@@ -4,5 +4,4 @@ export default DS.Model.extend({
 question: DS.attr(),
 author: DS.attr(),
 type: DS.attr(),
-answer: DS.attr(),
 });

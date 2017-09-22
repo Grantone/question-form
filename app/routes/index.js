@@ -4,25 +4,25 @@ var questions = [{
   id: 1,
   question: "Hi, who are you and how may I help you?",
   author: "Granton",
-  type: "general",
-  answer: [""],
+  type: "general"
 }, {
   id: 2,
   question: "Welcome this is your response please",
   author: "anthony",
-  type: "oral",
-  answer:[""],
+  type: "oral"
 }, {
   id: 3,
   question: "I may like to know more about it.",
   author: "Fred",
-  type: "normal",
-  answer: [""],
+  type: "normal"
+
 
 }];
 
+import Ember from 'ember';
+
 export default Ember.Route.extend({
   model() {
-    return questions;
+    return this.store.findAll('questions');
   },
 });
