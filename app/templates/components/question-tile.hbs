@@ -1,8 +1,9 @@
 <li>
   {{question.question}} {{question.author}} {{question.type}}
   {{#if isAuthorShowing }}
-    <p> src={{question.author}} alt={{question.type}} </p>
+    <p>{{question.author}} {{question.type}} {{action 'authorHide'}}</p>
   {{else}}
-    <button>Question</button>
+    <button {{action 'authorShow'}}>Question</button>
   {{/if}}
+  <button {{action 'answer' question}}>Given Answer</button>
 </li>
