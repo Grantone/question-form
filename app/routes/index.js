@@ -20,6 +20,6 @@ var questions = [{
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('questions');
+    return this.store.findAll('question');
   },
 });

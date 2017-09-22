@@ -1,1 +1,8 @@
-{{yield}}
+<li>
+  {{question.question}} {{question.author}} {{question.type}}
+  {{#if isAuthorShowing }}
+    <p> src={{question.author}} alt={{question.type}} </p>
+  {{else}}
+    <button>Question</button>
+  {{/if}}
+</li>
