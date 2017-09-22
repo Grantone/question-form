@@ -16,10 +16,7 @@ var questions = [{
   author: "Fred",
   type: "normal"
 
-
 }];
-
-import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
