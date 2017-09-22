@@ -3,4 +3,10 @@
 <p> Don't be shocked!!! You aren't lost, you are in the correct direction. almost to your destination :)</p>
 
 {{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Hallo, Q and A here.{{/link-to}}
+{{#link-to 'contact'}}Holla, Q and A here.{{/link-to}}
+
+<ul>
+  {{#each model as |questions|}}
+   <li>{{questions.question}} {{questions.author}} {{questions.type}} {{questions.answer}}</li>
+  {{/each}}
+</ul>
