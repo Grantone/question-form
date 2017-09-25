@@ -1,17 +1,17 @@
 import Ember from 'ember';
 
 var questions = [{
-  id: 1,
+  id: 0,
   question: "Hi, who are you and how may I help you?",
   author: "Granton",
   type: "general"
 }, {
-  id: 2,
+  id: 1,
   question: "Welcome this is your response please",
-  author: "anthony",
+  author: "Anthony",
   type: "oral"
 }, {
-  id: 3,
+  id: 2,
   question: "I may like to know more about it.",
   author: "Fred",
   type: "normal"
