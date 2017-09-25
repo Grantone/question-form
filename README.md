@@ -1,50 +1,30 @@
-# question-form
+AUTHORED By:
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Grantone Mchana
 
-## Prerequisites
+Prerequisites
 
 You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+Git
+Node.js (with NPM)
+Ember CLI
+Google Chrome
+##Tech Used Ember-cli
 
-## Installation
+Installation
 
-* `git clone <repository-url>` this repository
-* `cd question-form`
-* `npm install`
+git clone <https://github.com/Grantone/question-form.git> this repository
+navigate to the directory
+npm install
+Running / Development
 
-## Running / Development
+ember serve or ember s
+Visit your app at http://localhost:4200.
+Running Tests
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+ember test
+ember test --server
+Licenses
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+This project is licenced under MIT *copyright Grantone Mchana (c) 2017
