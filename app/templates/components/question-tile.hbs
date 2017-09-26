@@ -1,9 +1,4 @@
-<li>
-  {{question.question}} {{question.author}} {{question.type}}
-  {{#if isAuthorShowing }}
-    <p>{{question.author}} {{question.type}} {{action 'authorHide'}}</p>
-  {{else}}
-    <button {{action 'authorShow'}}>Question</button>
-  {{/if}}
-  <button {{action 'answer' question}}>Given Answer</button>
-</li>
+    {{question.question}} by {{question.author}}
+
+
+    {{edit-question question=question edit="edit"}}

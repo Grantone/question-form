@@ -1,4 +1,6 @@
+<div class="jumbotron">
 <h1> Welcome to Q and A Department pal. </h1>
+</div>
 
 <p> Don't be shocked!!! You aren't lost, you are in the correct direction. almost to your destination :)</p>
 
@@ -6,7 +8,8 @@
 {{#link-to 'contact'}}Holla Q and A here.{{/link-to}}
 
 <ul>
-  {{#each model as |questions|}}
-   {{question-tile questions=questions}}
+  {{#each model as |question|}}
+    <li>{{question-tile question=question edit="edit"}}</li>
   {{/each}}
 </ul>
+{{new-question saveQuestion="saveQuestion"}}
