@@ -5,5 +5,5 @@ export default DS.Model.extend({
   author: DS.attr(),
   type: DS.attr(),
   answer: DS.attr(),
-  reviews: DS.hasMany('review', { async: true }),
+  // reviews: DS.hasMany('review', { async: true }),
 });

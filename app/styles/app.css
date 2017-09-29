@@ -1,6 +1,27 @@
 .jumbotron {
-  background-color: skyblue;
-};
+  background-color: dimgrey;
+  text-align: center;
+}
 .topnav {
   background-color: black;
-};
+}
+
+#qn {
+  font-weight: bold;
+  background-color: white;
+}
+
+#bd {
+  background-color: tan;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: serif;
+}
+
+.body {
+  background-color: silver;
+  background-image: image(image.jpg);
+}
