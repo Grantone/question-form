@@ -14,7 +14,13 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     edit(question, params) {
-      question.save();
+      var newQuiz = this.store.createRecord('question', params)
+      newQuiz.save();
+      this.transitionTo('index');
+    },
+    saveReview(params) {
+      var newReview = this.store.createRecord('review', params);
+      newReview.save();
       this.transitionTo('index');
     }
   }

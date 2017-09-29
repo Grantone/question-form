@@ -13,7 +13,7 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{question-tile question=question edit="edit"}}</li>
+    {{question-popularity question}} {{question-tile question=question}}
   {{/each}}
 </ul>
 
@@ -28,7 +28,7 @@
 
 <hr>
 
-
+{{new-review saveReview="saveReview"}}
 
 {{new-question saveQuestion="saveQuestion"}}
 
