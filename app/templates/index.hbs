@@ -12,10 +12,24 @@
 {{#link-to 'contact'}}Holla Q and A here.{{/link-to}}
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     <li>{{question-tile question=question edit="edit"}}</li>
   {{/each}}
 </ul>
+
+
+<h2> All Reviews </h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>{{review.question}} -by {{review.author}} {{review.type}} {{review.answer}}</li>
+  {{/each}}
+</ul>
+
+<hr>
+
+
+
 {{new-question saveQuestion="saveQuestion"}}
 
   </div>

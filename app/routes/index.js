@@ -2,9 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question');
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      reviews: this.store.findAll('review')
+    });
   },
-
   actions: {
     saveQuestion(params) {
       var newQuestion = this.store.createRecord('question', params);
@@ -12,7 +14,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     edit(question, params) {
-        question.save();
+      question.save();
       this.transitionTo('index');
     }
   }
