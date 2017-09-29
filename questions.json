@@ -1,40 +1,28 @@
 {
   "questions":[{
-  "id": 1,
   "question": "Hi, who are you and how may I help you?",
   "author": "Granton",
-  "type": "general",
-  "answer": "Your answer is.."
+  "type": "general"
 }, {
-  "id": 2,
   "question": "Welcome this is your response please",
   "author": "anthony",
-  "type": "oral",
-  "answer": "The correspondence answer is your potential"
+  "type": "oral"
 }, {
-  "id": 3,
   "question": "I may like to know more about it.",
   "author": "Fred",
-  "type": "normal",
-  "answer": "It all about you and me but be conciderate"
+  "type": "normal"
 }],
-  "reviews": [{
-    "id": 1,
-    "question": "Hi, who are you and how may I help you?",
+  "answers": [{
     "author": "Granton",
     "type": "general",
     "answer": "Your answer is.."
   }, {
-    "id": 2,
-    "question": "Welcome this is your response please",
     "author": "anthony",
     "type": "oral",
     "answer": "The correspondence answer is your potential"
   }, {
-    "id": 3,
-    "question": "I may like to know more about it.",
     "author": "Fred",
     "type": "normal",
-    "answer": "It all about you and me but be conciderate"  
+    "answer": "It all about you and me but be conciderate"
   }]
 }

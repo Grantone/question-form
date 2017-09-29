@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
-      reviews: this.store.findAll('review')
+      answers: this.store.findAll('answer')
     });
   },
   actions: {
@@ -14,13 +14,13 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     edit(question, params) {
-      var newQuiz = this.store.createRecord('question', params)
-      newQuiz.save();
+      var newQuestion = this.store.createRecord('question', params)
+      newQuestion.save();
       this.transitionTo('index');
     },
-    saveReview(params) {
-      var newReview = this.store.createRecord('review', params);
-      newReview.save();
+    saveAnswer(params) {
+      var answers = this.store.createRecord('answer', params);
+      newAnswer.save();
       this.transitionTo('index');
     }
   }
