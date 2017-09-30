@@ -13,6 +13,17 @@
 
 #bd {
   background-color: tan;
+  border-radius: 90px;
+  margin-bottom: 10px;
+
+}
+#quest {
+  background-color: white;
+  border-radius: 90px;
+  margin-bottom: 10px;
+  height: 280px;
+  width:480px;
+  border: 5px solid blue;
 }
 
 h1 {
@@ -24,4 +35,10 @@ h1 {
 .body {
   background-color: silver;
   background-image: image(image.jpg);
+}
+
+#nque {
+  background-color: inherit;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
