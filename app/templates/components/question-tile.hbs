@@ -4,7 +4,7 @@
 
 
     <li>
-    {{question.question}} by {{question.author}}</li>
+    {{#link-to 'question' question.id}} {{question.question}}{{/link-to}} by {{question.author}}</li>
 </ul>
 
     {{edit-question question=question edit="edit"}}
